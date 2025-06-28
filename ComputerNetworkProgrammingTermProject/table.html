@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Table - Online Plant Nursery</title>
+  <style>
+
+    #container{
+        width:1000px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(230, 255, 230);
+        height: auto;
+        border-radius: 7px 7px 7px 7px;
+        overflow:auto;
+        font-family: calibri;
+    }
+
+    #navbar{
+        width:100%;
+        height:40px;
+        margin-bottom:15px;
+        margin-left: 15px;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin-left: -40px;
+    }
+
+    #menu li {
+      float: left;
+    }
+
+    #menu li a {
+      display: block;
+      text-decoration: none;
+      width: 80px;
+      height: 40px;
+      background-color: #4caf50;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 8px;
+      border-radius: 5px;
+      color: white;
+      transition: 0.5s;
+    }
+
+    #menu li a:hover {
+      background-color: #81c784;
+      color: #1b5e20;
+    }
+
+    #banner {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    #banner img {
+      display: block;
+      width: 100%;
+      height: 350px;
+    }
+
+    #bannerContent {
+      position: absolute;
+      color: white;
+      top: 100px;
+      left: 50px;
+      font-size: 23px;
+    }
+
+    #bannerContent p {
+      font-size: 30px;
+      color: white;
+      font-weight: bolder;
+    }
+
+    table {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 0 10px rgba(0, 100, 0, 0.2);
+    }
+
+    caption {
+      caption-side: top;
+      font-weight: bold;
+      font-size: 20px;
+      padding: 10px;
+      color: #2e7d32;
+    }
+
+    thead th {
+      background-color: #a5d6a7;
+      color: black;
+    }
+
+    tbody tr:nth-child(even) {
+      background-color: #f1f8e9;
+    }
+
+    th, td {
+      border: 1px solid #4caf50;
+      padding: 10px;
+      text-align: center;
+    }
+
+    #footer {
+      width: 100%;
+      height: 50px;
+      background-color: #4caf50;
+      text-align: center;
+      line-height: 50px;
+      color: white;
+      font-size: 14px;
+      margin-top: 20px;
+      border-radius: 0 0 7px 7px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+
+    <div id="banner">
+      <img src="Images\BannerImage.jpg" alt="Banner">
+      <div id="bannerContent">
+        <h1>Online Plant Nursery</h1>
+        <p>Our Plant Categories and Prices</p>
+      </div>
+    </div>
+
+    <div id="navbar">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plants.html">Plants</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="specifics.html">Specifics</a></li>
+      </ul>
+    </div>
+
+    <table>
+    <caption>Plant List by Type and Features</caption>
+    <thead>
+        <tr>
+        <th rowspan="2">Plant Name</th>
+        <th colspan="2">Category</th>
+        <th rowspan="2">Price ($)</th>
+        <th rowspan="2">Indoor/Outdoor</th>
+        </tr>
+        <tr>
+        <th>Main Type</th>
+        <th>Sub-Type</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Rose</td>
+        <td>Flowering</td>
+        <td>Classic</td>
+        <td>12</td>
+        <td>Outdoor</td>
+        </tr>
+        <tr>
+        <td>Violet</td>
+        <td>Flowering</td>
+        <td>Indoor Bloom</td>
+        <td>8</td>
+        <td>Indoor</td>
+        </tr>
+        <tr>
+        <td>Tulip</td>
+        <td>Flowering</td>
+        <td>Seasonal</td>
+        <td>9</td>
+        <td>Outdoor</td>
+        </tr>
+        <tr>
+        <td>Petunia</td>
+        <td>Flowering</td>
+        <td>Hanging</td>
+        <td>7</td>
+        <td>Outdoor</td>
+        </tr>
+        <tr>
+        <td>Wandering Jew</td>
+        <td>Leafy</td>
+        <td>Trailing</td>
+        <td>10</td>
+        <td>Indoor</td>
+        </tr>
+        <tr>
+        <td>Spider Plant</td>
+        <td>Leafy</td>
+        <td>Air Purifying</td>
+        <td>9</td>
+        <td>Indoor</td>
+        </tr>
+        <tr>
+        <td>Aloe Vera</td>
+        <td>Succulent</td>
+        <td>Medicinal</td>
+        <td>7</td>
+        <td>Indoor/Outdoor</td>
+        </tr>
+        <tr>
+        <td>Cactus</td>
+        <td>Succulent</td>
+        <td>Desert</td>
+        <td>6</td>
+        <td>Indoor/Outdoor</td>
+        </tr>
+    </tbody>
+    </table>
+
+
+    <div id="footer">
+      &copy; 2025 Dilara Meriç - Online Plant Nursery Project
+    </div>
+  </div>
+</body>
+</html>

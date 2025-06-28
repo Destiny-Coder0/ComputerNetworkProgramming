@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Highlights - Online Plant Nursery</title>
+  <style>
+
+    #container{
+        width:1000px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(230, 255, 230);
+        height: auto;
+        border-radius: 7px 7px 7px 7px;
+        overflow:auto;
+        font-family: calibri;
+    }
+
+    #navbar{
+        width:100%;
+        height:40px;
+        margin-bottom:15px;
+        margin-left: 15px;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin-left: -40px;
+    }
+
+    #menu li {
+      float: left;
+    }
+
+    #menu li a {
+      display: block;
+      text-decoration: none;
+      width: 80px;
+      height: 40px;
+      background-color: #4caf50;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 8px;
+      border-radius: 5px;
+      color: white;
+      transition: 0.5s;
+    }
+
+    #menu li a:hover {
+      background-color: #81c784;
+      color: #1b5e20;
+    }
+
+    #banner {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    #banner img {
+      display: block;
+      width: 100%;
+      height: 350px;
+    }
+
+    #bannerContent {
+      position: absolute;
+      color: white;
+      top: 100px;
+      left: 50px;
+      font-size: 23px;
+    }
+
+    #bannerContent p {
+      font-size: 30px;
+      color: white;
+      font-weight: bolder;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 30px;
+    }
+
+    figure {
+      width: 200px;
+      text-align: center;
+      margin: 15px;
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+
+    figcaption {
+      font-style: italic;
+      margin-top: 5px;
+      color: #2e7d32;
+    }
+
+    .plant-info {
+      margin: 30px;
+      background-color: #f0fff0;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px dashed #4caf50;
+    }
+
+    details {
+      margin-top: 15px;
+      background-color: #e8f5e9;
+      padding: 10px;
+      border-radius: 7px;
+      border: 1px solid #81c784;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      color: #2e7d32;
+    }
+
+    #footer {
+      width: 100%;
+      height: 50px;
+      background-color: #4caf50;
+      text-align: center;
+      line-height: 50px;
+      color: white;
+      font-size: 14px;
+      margin-top: 20px;
+      border-radius: 0 0 7px 7px;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+
+    <div id="banner">
+      <img src="Images\BannerImage.jpg" alt="Banner">
+      <div id="bannerContent">
+        <h1>Online Plant Nursery</h1>
+        <p>Featured Plants & Descriptions</p>
+      </div>
+    </div>
+
+    <div id="navbar">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plants.html">Plants</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="specifics.html">Specifics</a></li>
+      </ul>
+    </div>
+
+    <section class="gallery">
+      <figure>
+        <img src="Images\Violet.jpg" alt="Violet">
+        <figcaption>Violet</figcaption>
+      </figure>
+      <figure>
+        <img src="Images\Cactus.jpg" alt="Cactus">
+        <figcaption>Cactus</figcaption>
+      </figure>
+      <figure>
+        <img src="Images\Tulip.jpg" alt="Tulip">
+        <figcaption>Tulip</figcaption>
+      </figure>
+    </section>
+
+    <section class="plant-info">
+      <h2>Plant Information</h2>
+      <details>
+        <summary>Violet</summary>
+        <p>Violets are popular indoor flowering plants known for their vibrant purple, blue, or white petals. 
+      They prefer indirect sunlight and moderate watering. Violets bloom year-round if kept in the right 
+      conditions, and they symbolize modesty and faithfulness.</p>
+      </details>
+      <details>
+        <summary>Cactus</summary>
+        <p>A desert plant that is unique and hardy plants that thrive in dry, hot environments. They store water in their thick stems, making them perfect for people who might forget to water regularly. They can be in many different shapes and sizes. They love bright sunlight and require very little attention, which makes them an ideal choice for beginners or anyone who wants a low-maintenance plant.
+        </p>
+      </details>
+      <details>
+        <summary>Tulip</summary>
+        <p>Tulips are classic spring-blooming flowers that come in a rainbow of colors. 
+      They are often associated with love, rebirth, and elegance. Tulips grow from bulbs 
+      and need to be planted in the fall to bloom beautifully in spring gardens.</p>
+      </details>
+    </section>
+
+    <section style="margin: 30px; background-color: #f0fff0; padding: 20px; border-radius: 10px; border: 2px dashed #4caf50;">
+    <h2>🌱 Plant Tips Glossary</h2>
+
+    <dl>
+        <dt><em>Photosynthesis</em></dt>
+        <dd>The process by which green plants use sunlight to synthesize foods from carbon dioxide and water.</dd>
+        <hr>
+
+        <dt><em>Soil pH</em></dt>
+        <dd>Refers to the acidity or alkalinity of the soil. A balanced <mark>pH level</mark> is essential for plant health.</dd>
+        <hr>
+
+        <dt><em>Indirect Sunlight</em></dt>
+        <dd>Light that does not hit the plant directly. Ideal for indoor plants like <mark>Violets</mark> or <mark>Rubber Plants</mark>.</dd>
+        <hr>
+
+        <dt><em>Watering Schedule</em></dt>
+        <dd>How often a plant needs to be watered. <mark>Overwatering</mark> is a common problem!</dd>
+        <hr>
+
+        <dt><abbr title="United States Department of Agriculture"><em>USDA</em></abbr> Zone</dt>
+        <dd>A geographic zone that defines which plants grow best in that area based on climate.</dd>
+    </dl>
+    </section>
+
+    <div id="footer">
+      &copy; 2025 Dilara Meriç - Online Plant Nursery Project
+    </div>
+
+  </div>
+</body>
+</html>

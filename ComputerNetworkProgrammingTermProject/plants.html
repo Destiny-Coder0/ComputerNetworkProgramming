@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plants - Online Plant Nursery</title>
+  <style>
+
+    #container{
+        width:1000px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(230, 255, 230);
+        height: auto;
+        border-radius: 7px 7px 7px 7px;
+        overflow:auto;
+        font-family: calibri;
+    }
+
+    #navbar{
+        width:100%;
+        height:40px;
+        margin-bottom:15px;
+        margin-left: 15px;
+    }
+
+    #menu {
+      list-style-type: none;
+      margin-left: -40px;
+    }
+
+    #menu li {
+      float: left;
+    }
+
+    #menu li a {
+      display: block;
+      text-decoration: none;
+      width: 80px;
+      height: 40px;
+      background-color: #4caf50;
+      text-align: center;
+      line-height: 40px;
+      margin-right: 8px;
+      border-radius: 5px;
+      color: white;
+      transition: 0.5s;
+    }
+
+    #menu li a:hover {
+      background-color: #81c784;
+      color: #1b5e20;
+    }
+
+    #banner {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+
+    #banner img {
+      display: block;
+      width: 100%;
+      height: 350px;
+    }
+
+    #bannerContent {
+      position: absolute;
+      color: white;
+      top: 100px;
+      left: 50px;
+      font-size: 23px;
+    }
+
+    #bannerContent p {
+      font-size: 30px;
+      color: white;
+      font-weight: bolder;
+    }
+
+    .category {
+      border: 1px solid #4caf50;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 20px;
+      background-color: #f0fff0;
+    }
+
+    .category img {
+      width: 120px;
+      height: auto;
+      margin-right: 15px;
+      border-radius: 10px;
+    }
+
+    .category ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .category li {
+        font-size: 18px;
+    }
+
+    .dropdown-section {
+      margin: 20px;
+      padding: 15px;
+      background-color: #e8f5e9;
+      border: 1px dashed #81c784;
+      border-radius: 10px;
+    }
+
+    select {
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #4caf50;
+    }
+
+    #footer {
+        width: 100%;
+        height: 50px;
+        background-color: #4caf50;
+        text-align: center;
+        line-height: 50px;
+        color: white;
+        font-size: 14px;
+        margin-top: 20px;
+        border-radius: 0 0 7px 7px;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="container">
+
+    <div id="banner">
+      <img src="Images\BannerImage.jpg" alt="Banner">
+      <div id="bannerContent">
+        <h1>Online Plant Nursery</h1>
+        <p>Explore Our Beautiful Plants</p>
+      </div>
+    </div>
+
+    <div id="navbar">
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="plants.html">Plants</a></li>
+        <li><a href="form.html">Form</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="specifics.html">Specifics</a></li>
+      </ul>
+    </div>
+
+    <div class="dropdown-section">
+      <h2>Select Plant Category</h2>
+      <form>
+        <label for="plantType">Choose a type:</label>
+        <select id="plantType" name="plantType">
+          <option value="flowering">Flowering Plants</option>
+          <option value="leafy">Leafy Plants</option>
+          <option value="succulent">Succulents</option>
+          <option value="cactus">Seasonal Flowers</option>
+        </select>
+      </form>
+    </div>
+
+    <div class="category">
+      <h2>Flowering Plants</h2>
+      <ul>
+        <li>Rose <br>
+          <img src="Images/Rose.jpg" alt="Rose">
+        </li>
+        <li>Violet <br>
+          <img src="Images/Violet.jpg" alt="Violet">
+        </li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>Leafy Plants</h2>
+      <ul>
+        <li>Wandering Jew <br>
+          <img src="Images/WanderingJew.jpg" alt="Wandering Jew">
+        </li>
+        <li>Spider Plant <br>
+          <img src="Images/SpiderPlant.jpg" alt="Spider Plant">
+        </li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>Succulents</h2>
+      <ul>
+        <li>Aloe Vera <br>
+          <img src="Images/AloeVera.jpg" alt="Aloe Vera">
+        </li>
+        <li>Cactus <br>
+          <img src="Images/Cactus.jpg" alt="Cactus">
+        </li>
+      </ul>
+    </div>
+
+    <div class="category">
+      <h2>Seasonal Flowers</h2>
+      <ul>
+        <li>Tulip <br>
+          <img src="Images/Tulip.jpg" alt="Tulip">
+        </li>
+        <li>Petunia <br>
+          <img src="Images/Petunia.jpg" alt="Petunia">
+        </li>
+      </ul>
+    </div>
+
+    <div id="footer">
+    <p>&copy; 2025 Dilara Meriç - Online Plant Nursery Project</p>
+    </div>
+
+  </div>
+</body>
+</html>

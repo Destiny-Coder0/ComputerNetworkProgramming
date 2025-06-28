@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Plant Nursery - Dilara Meric</title>
+
+    <style>
+        #container{
+            width:1000px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(230, 255, 230);
+            height: auto;
+            border-radius: 7px 7px 7px 7px;
+            overflow:auto;
+            font-family: calibri;
+        }
+
+        #navbar{
+            width:100%;
+            height:40px;
+            margin-bottom:15px;
+            margin-left: 15px;
+        }
+
+        #menu{
+            list-style-type: none;
+            margin-left:-40px;
+        }
+
+        #menu li{
+            float:left; 
+        }
+
+        #menu li a{
+            display:block;
+            text-decoration:none;
+            width:80px;
+            height:40px;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 40px;
+            margin-right:8px;
+            border-radius: 5px;
+            color: white;
+            transition: 0.5s;
+        }
+
+        #menu li a:hover{
+            background-color: #81c784;
+            color:	#1b5e20;
+        }
+
+        #banner{
+            width:100%;
+            height:auto;
+            position:relative;
+        }
+
+        #banner img{
+            display:block;
+            width:100%;
+            height:350px;
+        }
+
+        #bannerContent{
+            position:absolute;
+            color:white;
+            top:100px;
+            left:50px;
+            font-size: 23px;
+            font-family: calibri;
+        }
+        #bannerContent p{
+            font-size: 30px;
+            color: white;
+            font-weight:bolder;
+        }
+
+        .projectInfo{
+            width: 100%;
+            height: auto;
+            background-image: linear-gradient(to left, lightgreen, rgb(240, 255, 240));
+            padding: 20px;
+            box-sizing: border-box;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .projectInfo img{
+            float:left;
+            margin-right:20px;
+            margin-bottom:20px;
+            margin-top:20px;
+        }
+
+        .projectContent{
+            width:100%;
+            height:auto;
+            padding:10px;
+            margin-top:20px;
+            margin-bottom:20px;
+            border: 2px solid #4caf50;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+        .projectInfo2{
+            padding:20px;
+            box-sizing: border-box;
+            margin-top:10px;
+            margin-bottom:10px;
+            margin-left:20px;
+        }
+
+        .projectInfo2 img{
+            float: right;
+            margin-right:30px;
+            border-radius: 50%;
+        }
+
+        #footer {
+            width: 100%;
+            height: 50px;
+            background-color: #4caf50;
+            text-align: center;
+            line-height: 50px;
+            color: white;
+            font-size: 14px;
+            margin-top: 20px;
+            border-radius: 0 0 7px 7px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="banner">
+            <img src="Images\BannerImage.jpg" style="width: 1000px;" alt="">
+        <div id="bannerContent">
+            <h1>Online Plant Nursery</h1>
+            <p>Welcome to the Plant Nursery!</p>
+        </div>
+
+        <div id="navbar">
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="specifics.html">Specifics</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+
+            <div class="projectInfo">
+                <img src="Images\PlantNursery.jpg" style="width:270px; height:180px;" alt="Plant Nursery" srcset="">
+                <h2>About the Project</h2>
+                <p>This website is designed as an online plant nursery system. It allows users to explore various types of plants, view categorized plant data, and submit an order form. The project includes <strong>five pages:</strong> a homepage, a detailed plant list, an order form, a table of plant features, and a page for additional highlights.
+                </p>
+
+                <p>The system is designed for users who are interested in houseplants, garden care, or decorative plants. The goal is to provide a clean and user-friendly interface for plant lovers.
+                </p>
+
+            </div>
+            
+            <div class="projectContent">
+                <div class="projectInfo2">
+                    <img src="Images\DilaraMericPicture.jpg" style="width:200px; height:210px;" alt="" srcset="">
+                    <p><strong>Student Name:</strong> Dilara MERİÇ</p>
+                    <p><strong>Student Number:</strong> B2380.011018</p>
+                    <p><strong>Department:</strong> Management Information Systems</p>
+                    <p><strong>Course Name and Code:</strong> Computer Network Programming - UMI224</p>
+                    <p><strong>Instructor Name:</strong> Assoc. Prof. Dr Ilham HUSEYINOV</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="footer">
+        <p>&copy; 2025 Dilara Meriç - Online Plant Nursery Project</p>
+        </div>
+
+    </div>
+</body>
+</html>
